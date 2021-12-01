@@ -1,7 +1,7 @@
 
 { arr[++count]=$1}
 END {
-   for(i=1;i<=(count-2);i++) {
+   for(i=1;i<=count-2;i++) {
       b[i]=arr[i]+arr[i+1]+arr[i+2];
    }
    increased=0;
