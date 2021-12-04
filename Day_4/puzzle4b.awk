@@ -23,6 +23,9 @@ BEGIN {
    while(number_count<length(a)) {
       print "Called number: " a[number_count];
       for(i=1;i<n;i++) {
+         if(wins[i]==1) {
+            continue;
+         }
          for(j=1;j<=5;j++) {
             for(k=1;k<=5;k++) {
                if(b[i "_" j "_" k]==a[number_count]) {
@@ -31,7 +34,7 @@ BEGIN {
                   if(check_for_bingo()==1) {
                      print "Bingo! Board #" i  " , "  a[number_count];
                      final_calculations();
-                     exit;
+                     wins[i]=1;
                   }
                }
             }
@@ -82,6 +85,7 @@ function check_for_bingo() {
 }
 
 function final_calculations() {
+   sum=0;
    for(w=1;w<=5;w++) {
       for(x=1;x<=5;x++) {
          v=b[i "_" w "_" x];
