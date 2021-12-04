@@ -54,4 +54,6 @@ To verify my entry, I displayed information about the winning card.
     Sum 947
     Product 41668
 
-This was a fun challenge.
+When implementing the second part of the challenge, I removed the call to **exit** from the script and I added an array called **wins**.  As each board that held a bingo won, I placed the index of that board from the outer array into wins.  When processing called numbers, the code skips attempting to process any board that had already won.  The final winning board is displayed in the output with the appropriate values.
+
+This was a fun challenge!
