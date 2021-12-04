@@ -46,11 +46,11 @@ To verify my entry, I displayed information about the winning card.
     Called number: 44
     Row 5
     Bingo! Board #69 , 44
-     98  74  36 \*23   6
-     65  17 \*78  95  96
+     98  74  36 *23   6
+     65  17 *78  95  96
      68  63  47  16  18
-     87 \*30  53  51  57
-    \*69 \*11 \*44 \*75 \*89
+     87 *30  53  51  57
+    *69 *11 *44 *75 *89
     Sum 947
     Product 41668
 
