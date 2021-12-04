@@ -38,20 +38,20 @@ After loading the cards into associative array **b** and having already loaded t
 
 To verify my entry, I displayed information about the winning card.
 
-  ...
-  Called number: 78
-  Called number: 32
-  Called number: 39
-  Called number: 11
-  Called number: 44
-  Row 5
-  Bingo! Board #69 , 44
-   98  74  36 \*23   6
-   65  17 \*78  95  96
-   68  63  47  16  18
-   87 \*30  53  51  57
-  \*69 \*11 \*44 \*75 \*89
-  Sum 947
-  Product 41668
+    ...
+    Called number: 78
+    Called number: 32
+    Called number: 39
+    Called number: 11
+    Called number: 44
+    Row 5
+    Bingo! Board #69 , 44
+     98  74  36 \*23   6
+     65  17 \*78  95  96
+     68  63  47  16  18
+     87 \*30  53  51  57
+    \*69 \*11 \*44 \*75 \*89
+    Sum 947
+    Product 41668
 
 This was a fun challenge.
