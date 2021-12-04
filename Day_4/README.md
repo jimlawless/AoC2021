@@ -8,12 +8,12 @@ One of the first challenges that I ran into was that the file contents had a var
 
 I directly invoked AWK's **getline** command which normally occurs outside of the formal code of an AWK script. This reads the next line and parses it based on the field-separater delimiter **FS** into the $0, $1, $2 ...etc. fields.  In order to process the first line, I had to reset the FS value from its normal whitespace value to a comma.  This made reading the first line into an array pretty painless.
 
-  BEGIN {
-     FS=",";
-     getline < "input4.txt";
-     for(i=1;i<=NF;i++) {
-        a[++count]=$i;
-     }
+    BEGIN {
+       FS=",";
+       getline < "input4.txt";
+       for(i=1;i<=NF;i++) {
+          a[++count]=$i;
+       }
 
 My text editor worked against me when trying to process this input, initially.  The values of the single line of input wrapped in my text editor; they looked like two lines, so I had added code to process a second line.  This temporarily had skewed the rest of the input which took me some time to diagnose.
 
