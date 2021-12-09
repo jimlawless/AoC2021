@@ -9,12 +9,9 @@
 }
 
 END {
-   #print "ending!";
-   #print count " " width ;
    for(i=1;i<=count;i++) {
       for(j=1;j<=width;j++) {
          if(scan(i,j)==1) {
-            #print ":: " i " " j " " a[i "_" j ];
             risks[++rc]=a[i "_" j] + 1;
          }
       }
@@ -60,7 +57,6 @@ function scan(row,column) {
       matches+=(a[row "_" column]< a[row "_" (column+1) ]) ? 1 : 0;
    }
    if(matches==4) {
-      #print "Match: " a[row "_" column]
       return 1;
    }
    return 0;
