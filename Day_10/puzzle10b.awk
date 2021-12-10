@@ -23,7 +23,7 @@ BEGIN {
 			sp=1;
 		    next;
          }
-	  }
+      }
    }
    total=0;
    while(sp!=1) {
